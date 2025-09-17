@@ -1,0 +1,33 @@
+ O que é um acumulador?
+R: É uma variável para armazenar o estado do programa
+
+O que é um processo recursivo? E iterativo?
+R: Processo recursivo é caracterizado por uma sequencia de
+operações adiadas e tem um padrão de crescer e depois diminuir
+ex:
+    1 + {soma(r)}
+    1 + {1 + soma(r)}
+    1 + {1 + {1 + soma(r)}}
+
+Um processo iterativo, não depende do tamanho da entrada para fazer a substituição.
+
+
+O que é uma função recursiva em cauda?
+R: quando a chamada recursiva é a ultima operação a ser realizada, 
+ou seja, as outra operações são realizadas, como a soma ou multiplicação,
+e só depois disso a chamada recursiva acontece.
+
+Qual a relação entre recursão em cauda e processo iterativos?
+R: Para criar processos iterativos você precisa da recursão em cauda.
+
+Que perguntas precisamos responder para projetar uma função com acumulador?
+R: A função irá se beneficiar de um acumulador?
+    . A função se tornará mais simples
+    . Diminui o tempo de execução
+    . Diminui o consumo de memória
+  
+  Entender o que o acumulador significa
+    . Como inicializalo
+    . Como atualizar
+
+  Determinar o resultado da função a partir do acumulador
