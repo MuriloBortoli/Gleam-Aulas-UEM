@@ -40,8 +40,12 @@ pub fn supercentenario_examples() {
 ///
 /// Requer que o dia e o mês tenham dois dígitos e que
 /// o ano tenha quatro dígitos.
-pub fn dma_para_amd(dia: Int) -> String {
-  todo
+pub fn dma_para_amd(data: String) -> String {
+  case string.length(string.slice(data, 0, 1) == 2 && string.length(string.slice(data, 3, 1) == 2 ) && string.length(string.slice(data,6, 3) == 4)) {
+    True -> string.slice(data,6, 4) <> string.slice(data, 2, 3) <> string.slice(data, 0, 2)
+    False -> "Erro"
+  }
+  
 }
 
 pub fn dma_para_amd_examples() {
